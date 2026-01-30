@@ -8,63 +8,79 @@ import "hardhat-contract-sizer";
 import "solidity-coverage";
 import "dotenv/config";
 
-const bscTestnet: NetworkUserConfig = {
-  url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
-  chainId: 97,
-  accounts: [process.env.KEY_TESTNET!],
-};
-
-const bscMainnet: NetworkUserConfig = {
-  url: "https://bsc-dataseed.binance.org/",
-  chainId: 56,
-  accounts: [process.env.KEY_MAINNET!],
-};
-
-const ticsMainnet: NetworkUserConfig = {
-  url: 'https://rpc.qubetics.com/',
-  chainId: 9030,
-  accounts: [process.env.KEY_MAINNET!],
-};
-
-const { KEY_MAINNET } = process.env;
+require("dotenv").config({ path: require("find-config")(".env") });
 
 const config: HardhatUserConfig = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: 'hardhat',
   networks: {
-    hardhat: {
-      // Hardhat network configuration is for local development.
-      // It can be forked to mirror a live network for testing.
+    // Mainnets
+    hardhat: {},
+    localhost: { timeout: 600000 },
+    seiMainnet: {
+      url: https://evm-rpc.sei-apis.com,
+      accounts: [process.env.KEY_MAINNET!]
     },
-//    mainnet: {
-//      url: "https://bsc-dataseed.binance.org/", // bscMainnet
-//	  	chainId: 56,
-//      accounts: [process.env.KEY_MAINNET!],
-//    },
-    mainnet: {
-      url: "https://rpc.qubetics.com/",		// ticsMainnet
-	  accounts: process.env.KEY_MAINNET
-        ? [process.env.KEY_MAINNET]
-        : [], // Safely handle the private key
-      chainId: 9030,
-	//  chainId: 9030,
-    //  accounts: [process.env.KEY_MAINNET!],
+	monadMainnet: {
+      url: https://rpc.monad.xyz,
+      accounts: [process.env.KEY_MAINNET!]
     },
-  },
+	ticsMainnet: {
+      url: https://rpc.qubetics.com,
+      accounts: [process.env.KEY_MAINNET!]
+    },
+	bscMainnet: {
+      url: https://bsc-dataseed.binance.org,
+      accounts: [process.env.KEY_MAINNET!]
+    },
+	avaxMainnet: {
+      url: https://api.avax.network/ext/bc/C/rpc,
+      accounts: [process.env.KEY_MAINNET!]
+    },
+  },	
   etherscan: {
-    // API key is not always required for custom explorers but good practice to include
-    apiKey: {
-      mainnet: 'YOUR_API_KEY', // Replace with your TicsScan API key if needed
-    },
+    apiKey: process.env.ETHERSCAN_API_KEY || '',
     customChains: [
-      {
-        network: 'mainnet',
+	  {
+        network: 'sei',
+        chainId: 1329,
+        urls: {
+          apiURL: process.env.SEI_API_ENDPOINT || '',
+          browserURL: process.env.SEI_EXPLORER || ''
+        }
+      },
+	  {
+        network: 'monad',
+        chainId: 143,
+        urls: {
+          apiURL: process.env.MONAD_API_ENDPOINT || '',
+          browserURL: process.env.MONAD_EXPLORER || ''
+        }
+      },
+	  {
+        network: "qubetics",
         chainId: 9030,
         urls: {
-          apiURL: 'https://ticsscan.com/contract/verify', // TicsScan API URL
-          browserURL: 'https://ticsscan.com/', // TicsScan browser URL
-        },
+          apiURL: process.env.QUBETICS_API_ENDPOINT || '',
+          browserURL: process.env.QUBETICS_EXPLORER || ''
+        }
       },
-    ],
+	  {
+        network: 'bsc',
+        chainId: 56,
+        urls: {
+          apiURL: process.env.BSC_API_ENDPOINT || '',
+          browserURL: process.env.BSC_EXPLORER || ''
+        }
+      },
+	  {
+        network: 'avalanche',
+        chainId: 43114,
+        urls: {
+          apiURL: process.env.AVALANCHE_API_ENDPOINT || '',
+          browserURL: process.env.AVALANCHE_EXPLORER || ''
+        }
+      }
+    ]
   },
   solidity: {
     compilers: [
