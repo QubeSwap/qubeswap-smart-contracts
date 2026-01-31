@@ -2,11 +2,11 @@
 // import 'zx/globals'
 
 const networks = {
-  eth: 'eth',
-  goerli: 'goerli',
+  seiMainnet: 'seiMainnet',
+  monadMainnet: 'monadMainnet',
   ticsMainnet: 'ticsMainnet',
   bscMainnet: 'bscMainnet',
-  bscTestnet: 'bscTestnet',
+  avaxMainnet: 'avaxMainnet',
   hardhat: 'hardhat',
 }
 
@@ -16,7 +16,7 @@ if (!network || !networks[network]) {
   throw new Error(`env NETWORK: ${network}`)
 }
 
-await $`yarn workspace @qubeswap/v3-core run hardhat verify --network ${network} 0x8aF90Ef0172999bc0a3495c9b363b66C40EfdE61`
+await $`yarn workspace @qubeswap/stable-swap run hardhat verify --network ${network} 0x8aF90Ef0172999bc0a3495c9b363b66C40EfdE61`
 
 //await $`yarn workspace @qubeswap/v3-periphery run hardhat run scripts/verify.ts --network ${network}`
 

@@ -10,14 +10,14 @@
   "author": "QubeSwap",
   "license": "MIT",
   "scripts": {
-    "compile": "yarn workspaces run compile",
-    "deploy_stable_swap1": "yarn --cwd projects/stable-swap run deploy_LPFactory",
-    "deploy_stable_swap2": "yarn --cwd projects/stable-swap run deploy_swapTwoPoolDeployer",
-    "deploy_stable_swap3": "yarn --cwd projects/stable-swap run deploy_swapThreePoolDeployer",
-    "deploy_stable_swap4": "yarn --cwd projects/stable-swap run deploy",
-    "deploy_stable_swap5": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfo",
-    "deploy_stable_swap6": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfo",
-    "deploy_stable_swap7": "yarn --cwd projects/stable-swap run deploy_SwapInfo",
+    "compile_stableSwap": "yarn --cwd projects/stable-swap run compile",
+    "deploy_LPFactorySei": "yarn --cwd projects/stable-swap run deploy_LPFactorySei",
+    "deploy_swapTwoPoolDeployerSei": "yarn --cwd projects/stable-swap run deploy_swapTwoPoolDeployerSei",
+    "deploy_swapThreePoolDeployerSei": "yarn --cwd projects/stable-swap run deploy_swapThreePoolDeployerSei",
+    "deploy_qubeStableSwapFactorySei": "yarn --cwd projects/stable-swap run deploy_qubeStableSwapFactorySei",
+    "deploy_TwoPoolInfoSei": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfoSei",
+    "deploy_ThreePoolInfoSei": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoSei",
+    "deploy_SwapInfoSei": "yarn --cwd projects/stable-swap run deploy_SwapInfoSei",
 	"flatten_stable_swap1": "yarn --cwd projects/stable-swap run flatten_LPFactory",
 	"flatten_stable_swap2": "yarn --cwd projects/stable-swap run flatten_swapTwoPoolDeployer",
 	"flatten_stable_swap3": "yarn --cwd projects/stable-swap run flatten_swapThreePoolDeployer",
@@ -61,6 +61,7 @@
     "solidity-coverage": "^0.7.13",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3",
+	"zx": "^7.2.0",
     "web3": "^1.3.6"
   }
 }
