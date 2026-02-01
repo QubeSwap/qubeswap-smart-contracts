@@ -16,6 +16,8 @@ async function main() {
     await qubeStableSwapTwoPoolInfo.deployed();
 
     console.log("qubeStableSwapTwoPoolInfo deployed to:", qubeStableSwapTwoPoolInfo.address);
+	
+	await run('verify:verify', { address: qubeStableSwapTwoPoolInfo.address });
   }
 }
 

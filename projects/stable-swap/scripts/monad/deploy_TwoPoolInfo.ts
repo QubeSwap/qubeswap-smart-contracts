@@ -4,20 +4,20 @@ async function main() {
   // Get network data from Hardhat config (see hardhat.config.ts).
   const networkName = network.name;
   // Check if the network is supported.
-  if (networkName === "seiTestnet" || networkName === "seiMainnet") {
+  if (networkName === "monadTestnet" || networkName === "monadMainnet") {
     console.log(`Deploying to ${networkName} network...`);
 
     // Compile contracts.
     await run("compile");
     console.log("Compiled contracts...");
 
-    const QubeStableSwapThreePoolInfo = await ethers.getContractFactory("QubeStableSwapThreePoolInfo");
-    const qubeStableSwapThreePoolInfo = await QubeStableSwapThreePoolInfo.deploy();
-    await qubeStableSwapThreePoolInfo.deployed();
+    const QubeStableSwapTwoPoolInfo = await ethers.getContractFactory("QubeStableSwapTwoPoolInfo");
+    const qubeStableSwapTwoPoolInfo = await QubeStableSwapTwoPoolInfo.deploy();
+    await qubeStableSwapTwoPoolInfo.deployed();
 
-    console.log("qubeStableSwapThreePoolInfo deployed to:", qubeStableSwapThreePoolInfo.address);
+    console.log("qubeStableSwapTwoPoolInfo deployed to:", qubeStableSwapTwoPoolInfo.address);
 	
-	await run('verify:verify', { address: qubeStableSwapThreePoolInfo.address });
+	await run('verify:verify', { address: qubeStableSwapTwoPoolInfo.address });
   }
 }
 

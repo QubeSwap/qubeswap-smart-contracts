@@ -4,20 +4,18 @@ async function main() {
   // Get network data from Hardhat config (see hardhat.config.ts).
   const networkName = network.name;
   // Check if the network is supported.
-  if (networkName === "seiTestnet" || networkName === "seiMainnet") {
+  if (networkName === "testnet" || networkName === "mainnet") {
     console.log(`Deploying to ${networkName} network...`);
 
     // Compile contracts.
     await run("compile");
     console.log("Compiled contracts...");
 
-    const QubeStableSwapThreePoolInfo = await ethers.getContractFactory("QubeStableSwapThreePoolInfo");
-    const qubeStableSwapThreePoolInfo = await QubeStableSwapThreePoolInfo.deploy();
-    await qubeStableSwapThreePoolInfo.deployed();
+    const MockToken = await ethers.getContractFactory("MockToken");
+    const mockToken = await MockToken.deploy();
+    await mockToken.deployed();
 
-    console.log("qubeStableSwapThreePoolInfo deployed to:", qubeStableSwapThreePoolInfo.address);
-	
-	await run('verify:verify', { address: qubeStableSwapThreePoolInfo.address });
+    console.log("mockToken deployed to:", mockToken.address);
   }
 }
 

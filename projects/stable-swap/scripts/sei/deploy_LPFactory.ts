@@ -16,6 +16,8 @@ async function main() {
     await qubeStableSwapLPFactory.deployed();
 
     console.log("qubeStableSwapLPFactory deployed to:", qubeStableSwapLPFactory.address);
+	
+	await run('verify:verify', { address: qubeStableSwapLPFactory.address });
   }
 }
 
