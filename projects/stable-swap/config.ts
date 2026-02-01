@@ -25,7 +25,7 @@ export default {
     seiMainnet: "0x", //official
     seiTestnet: "0x",
   },
-  Factory: { //qubeStableSwapFactory
+  Factory: { //qubeStableSwapFactory - stableFactory
     seiMainnet: "0x", //official
     seiTestnet: "0x",
   },
@@ -37,7 +37,7 @@ export default {
     seiMainnet: "0x", //official
     seiTestnet: "0x",
   },
-  Info: { //qubeStableSwapInfo
+  Info: { //qubeStableSwapInfo - stableInfo
     seiMainnet: "0x", //official
     seiTestnet: "0x",
   },
