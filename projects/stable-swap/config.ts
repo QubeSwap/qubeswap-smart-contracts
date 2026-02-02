@@ -95,6 +95,10 @@ export default {
 	// WMON
     monadMainnet: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
 	// WTICS
-    ticsMainnet: "0x",
+    ticsMainnet: "0x8A0a018caEd522B3f1501616f828f6B1819Ced22",
+	// WBNB
+    bscMainnet: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+	// WAVAX
+    avaxMainnet: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
   },
 };

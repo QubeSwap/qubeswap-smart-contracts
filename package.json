@@ -35,6 +35,22 @@
     "deploy_ThreePoolInfoTics": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoTics",
     "deploy_SwapInfoTics": "yarn --cwd projects/stable-swap run deploy_SwapInfoTics",
 	
+	"deploy_LPFactoryBsc": "yarn --cwd projects/stable-swap run deploy_LPFactoryBsc",
+    "deploy_swapTwoPoolDeployerBsc": "yarn --cwd projects/stable-swap run deploy_swapTwoPoolDeployerBsc",
+    "deploy_swapThreePoolDeployerBsc": "yarn --cwd projects/stable-swap run deploy_swapThreePoolDeployerBsc",
+    "deploy_qubeStableSwapFactoryBsc": "yarn --cwd projects/stable-swap run deploy_qubeStableSwapFactoryBsc",
+    "deploy_TwoPoolInfoBsc": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfoBsc",
+    "deploy_ThreePoolInfoBsc": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoBsc",
+    "deploy_SwapInfoBsc": "yarn --cwd projects/stable-swap run deploy_SwapInfoBsc",
+	
+	"deploy_LPFactoryAvax": "yarn --cwd projects/stable-swap run deploy_LPFactoryAvax",
+    "deploy_swapTwoPoolDeployerAvax": "yarn --cwd projects/stable-swap run deploy_swapTwoPoolDeployerAvax",
+    "deploy_swapThreePoolDeployerAvax": "yarn --cwd projects/stable-swap run deploy_swapThreePoolDeployerAvax",
+    "deploy_qubeStableSwapFactoryAvax": "yarn --cwd projects/stable-swap run deploy_qubeStableSwapFactoryAvax",
+    "deploy_TwoPoolInfoAvax": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfoAvax",
+    "deploy_ThreePoolInfoAvax": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoAvax",
+    "deploy_SwapInfoAvax": "yarn --cwd projects/stable-swap run deploy_SwapInfoAvax",
+	
     "format:check": "prettier --check 'projects/**/*.{js,ts,sol}'",
     "format:write": "prettier --write 'projects/**/*.{js,ts,sol}'",
     "clean": "rm -rf node_modules && yarn workspaces run clean",
