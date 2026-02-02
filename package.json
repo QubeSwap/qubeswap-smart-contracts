@@ -18,6 +18,7 @@
     "deploy_TwoPoolInfoSei": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfoSei",
     "deploy_ThreePoolInfoSei": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoSei",
     "deploy_SwapInfoSei": "yarn --cwd projects/stable-swap run deploy_SwapInfoSei",
+	
 	"deploy_LPFactoryMonad": "yarn --cwd projects/stable-swap run deploy_LPFactoryMonad",
     "deploy_swapTwoPoolDeployerMonad": "yarn --cwd projects/stable-swap run deploy_swapTwoPoolDeployerMonad",
     "deploy_swapThreePoolDeployerMonad": "yarn --cwd projects/stable-swap run deploy_swapThreePoolDeployerMonad",
@@ -25,6 +26,15 @@
     "deploy_TwoPoolInfoMonad": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfoMonad",
     "deploy_ThreePoolInfoMonad": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoMonad",
     "deploy_SwapInfoMonad": "yarn --cwd projects/stable-swap run deploy_SwapInfoMonad",
+	
+	"deploy_LPFactoryTics": "yarn --cwd projects/stable-swap run deploy_LPFactoryTics",
+    "deploy_swapTwoPoolDeployerTics": "yarn --cwd projects/stable-swap run deploy_swapTwoPoolDeployerTics",
+    "deploy_swapThreePoolDeployerTics": "yarn --cwd projects/stable-swap run deploy_swapThreePoolDeployerTics",
+    "deploy_qubeStableSwapFactoryTics": "yarn --cwd projects/stable-swap run deploy_qubeStableSwapFactoryTics",
+    "deploy_TwoPoolInfoTics": "yarn --cwd projects/stable-swap run deploy_TwoPoolInfoTics",
+    "deploy_ThreePoolInfoTics": "yarn --cwd projects/stable-swap run deploy_ThreePoolInfoTics",
+    "deploy_SwapInfoTics": "yarn --cwd projects/stable-swap run deploy_SwapInfoTics",
+	
     "format:check": "prettier --check 'projects/**/*.{js,ts,sol}'",
     "format:write": "prettier --write 'projects/**/*.{js,ts,sol}'",
     "clean": "rm -rf node_modules && yarn workspaces run clean",

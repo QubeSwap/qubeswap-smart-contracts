@@ -14,6 +14,7 @@
 		"deploy_TwoPoolInfoSei": "npx hardhat run --network seiMainnet scripts/sei/deploy_TwoPoolInfo.ts",
 		"deploy_ThreePoolInfoSei": "npx hardhat run --network seiMainnet scripts/sei/deploy_ThreePoolInfo.ts",
 		"deploy_SwapInfoSei": "npx hardhat run --network seiMainnet scripts/sei/deploy_SwapInfo.ts",
+		
 		"deploy_qubeStableSwapFactoryMonad": "npx hardhat run --network monadMainnet scripts/monad/deploy_qubeStableSwapFactory.ts",
 		"deploy_LPFactoryMonad": "npx hardhat run --network monadMainnet scripts/monad/deploy_LPFactory.ts",
 		"deploy_swapTwoPoolDeployerMonad": "npx hardhat run --network monadMainnet scripts/monad/deploy_swapTwoPoolDeployer.ts",
@@ -21,6 +22,15 @@
 		"deploy_TwoPoolInfoMonad": "npx hardhat run --network monadMainnet scripts/monad/deploy_TwoPoolInfo.ts",
 		"deploy_ThreePoolInfoMonad": "npx hardhat run --network monadMainnet scripts/monad/deploy_ThreePoolInfo.ts",
 		"deploy_SwapInfoMonad": "npx hardhat run --network monadMainnet scripts/monad/deploy_SwapInfo.ts",
+		
+		"deploy_qubeStableSwapFactoryTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_qubeStableSwapFactory.ts",
+		"deploy_LPFactoryTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_LPFactory.ts",
+		"deploy_swapTwoPoolDeployerTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_swapTwoPoolDeployer.ts",
+		"deploy_swapThreePoolDeployerTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_swapThreePoolDeployer.ts",
+		"deploy_TwoPoolInfoTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_TwoPoolInfo.ts",
+		"deploy_ThreePoolInfoTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_ThreePoolInfo.ts",
+		"deploy_SwapInfoTics": "npx hardhat run --network ticsMainnet scripts/tics/deploy_SwapInfo.ts",
+		
         "deploy_qubeStableSwapFactory:testnet": "npx hardhat run --network testnet scripts/deploy_qubeStableSwapFactory.ts",
         "deploy_qubeStableSwapFactory:mainnet": "npx hardhat run --network mainnet scripts/deploy_qubeStableSwapFactory.ts",
         "deploy_LPFactory:testnet": "npx hardhat run --network testnet scripts/deploy_LPFactory.ts",
