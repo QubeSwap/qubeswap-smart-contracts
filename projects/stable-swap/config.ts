@@ -10,6 +10,12 @@ export default {
 	//For - Tics
 	ticsMainnet: 1000,
     ticsTestnet: 1000,
+	//For - Bsc
+	bscMainnet: 1000,
+    bscTestnet: 1000,
+	//For - Avax
+	avaxMainnet: 1000,
+    avaxTestnet: 1000,
   },
   Fee: {
 	//For - Sei  
@@ -21,6 +27,12 @@ export default {
 	//For - Tics
     ticsMainnet: 4000000,
     ticsTestnet: 4000000,
+	//For - Bsc
+    bscMainnet: 4000000,
+    bscTestnet: 4000000,
+	//For - Avax
+    avaxMainnet: 4000000,
+    avaxTestnet: 4000000,
   },
   AdminFee: {
 	//For - Sei  
@@ -32,6 +44,12 @@ export default {
 	//For - Tics
     ticsMainnet: 5000000000,
     ticsTestnet: 5000000000,
+	//For - Bsc
+    bscMainnet: 5000000000,
+    bscTestnet: 5000000000,
+	//For - Avax
+    avaxMainnet: 5000000000,
+    avaxTestnet: 5000000000,
   },
   LPFactory: {
 	//For - Sei  
@@ -40,6 +58,10 @@ export default {
     monadMainnet: "0x16fb89911d7B87daB56510dCB91C2027f9B020b9", //official
 	//For - Tics
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   SwapTwoPoolDeployer: {
 	//For - Sei  
@@ -48,6 +70,10 @@ export default {
     monadMainnet: "0x83F77ec45AECd6AaA975D43d7710c5349A078B71", //official
 	//For - Tics
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   SwapThreePoolDeployer: {
 	//For - Sei  
@@ -56,6 +82,10 @@ export default {
     monadMainnet: "0xae5095cF0999FeAeF62A07bF0465f4835944D697", //official
 	//For - Tics
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   Factory: { //qubeStableSwapFactory - stableFactory
     //For - Sei  
@@ -64,6 +94,10 @@ export default {
     monadMainnet: "0x931765421E5970dda3e3499449A67fb03f4ebD4C", //official
 	//For - Tics  
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   TwoPoolInfo: {
 	//For - Sei  
@@ -72,6 +106,10 @@ export default {
     monadMainnet: "0x11A51A136DE68347c9e2e76A2B1F517CE43cfc35", //official
 	//For - Tics  
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   ThreePoolInfo: {
 	//For - Sei  
@@ -80,6 +118,10 @@ export default {
     monadMainnet: "0xb38dC4991350a0145b37347afC988c99C5fac036", //official
 	//For - Tics
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   Info: { //qubeStableSwapInfo - stableInfo
     //For - Sei  
@@ -88,6 +130,10 @@ export default {
     monadMainnet: "0x38Ec4aDBabfEb321D512769734e3731Ccf3a8AFf", //official
 	//For - Tics
     ticsMainnet: "0x", //official
+	//For - Bsc
+    bscMainnet: "0x", //official
+	//For - Avax
+    avaxMainnet: "0x", //official
   },
   WBNB: {
 	// WSEI  
