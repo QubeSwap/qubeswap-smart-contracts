@@ -135,7 +135,7 @@ export default {
 	//For - Avax
     avaxMainnet: "0x931765421E5970dda3e3499449A67fb03f4ebD4C", //official
   },
-  WBNB: {
+  WBNB: { //WNATIVE
 	// WSEI  
     seiMainnet: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
 	// WMON
